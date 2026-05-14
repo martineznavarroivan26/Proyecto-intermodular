@@ -1,0 +1,130 @@
+.profile-page {
+    width: min(100%, 48rem);
+    margin: 0 auto;
+    padding: 0 1.25rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    left: 0;
+}
+
+.profile-page .titulo {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.profile-page .linea {
+    width: 100%;
+    margin: 0 0 1.25rem;
+}
+
+.profile-panel {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #fff4db;
+    border: 2px solid #e07b00;
+    border-radius: 0.75rem;
+    padding: 2rem 1.25rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-form .auth-form-group input[type="file"] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-avatar-preview {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #0050A0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    flex-shrink: 0;
+    border: 3px solid #e07b00;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.profile-form .auth-form-group {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-form .auth-form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.profile-form .auth-form-group input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-form .auth-form-group input[type="file"] {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.profile-form .auth-form-group input[type="file"]::file-selector-button {
+    background: linear-gradient(90deg, #1E90FF 0%, #0050A0 100%);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.profile-form .auth-form-group input[type="file"]::file-selector-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-submit-btn {
+    margin-top: 0.4rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+    .profile-page {
+        padding: 0 0.75rem 2.5rem;
+    }
+
+    .profile-panel {
+        padding: 1.25rem 0.9rem;
+    }
+
+    .profile-avatar-preview {
+        width: 6rem;
+        height: 6rem;
+        font-size: 2rem;
+    }
+}
