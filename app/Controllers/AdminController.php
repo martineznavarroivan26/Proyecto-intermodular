@@ -75,32 +75,6 @@ class AdminController extends Controller
             return;
         }
 
-        // Modo local: se desactiva la capa de base de datos para este panel.
-        // El contenido se renderiza con colecciones vacias y sin ejecutar acciones CRUD.
-        $errors = [];
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $errors[] = 'Panel en modo local: la conexion con base de datos esta desactivada.';
-        }
-
-        $this->render('pages/admin', [
-            'errors' => $errors,
-            'sagas' => [],
-            'plataformas' => [],
-            'juegos' => [],
-            'personajes' => [],
-            'equipos' => [],
-            'pageTitle' => 'Control de Contenido',
-            'styles' => [
-                'estilos/css/css_pag/style.css',
-                'estilos/css/css_pag/foro.css',
-                'estilos/css/css_pag/eventos.css',
-                'estilos/css/css_pag/moderacion.css',
-                'estilos/css/css_pag/responsive.css',
-            ],
-            'currentPage' => 'moderacion',
-        ]);
-        return;
-
         $model = new AdminModel();
         $errors = [];
         $action = (string) ($_POST['admin_action'] ?? '');

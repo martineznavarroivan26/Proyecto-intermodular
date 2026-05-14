@@ -66,7 +66,8 @@ $timeAgoLabel = static function (?string $dateTime): string {
 
     <div style="margin: 20px 5%;">
         <form action="<?= $forumBaseRoute ?>" method="get" class="search-bar" data-forum-search-form>
-            <input type="text" name="q" value="<?= htmlspecialchars($forumSearch, ENT_QUOTES, 'UTF-8') ?>" placeholder="Buscar en el foro..." data-forum-search-input>
+            <label for="foro-search-input" class="visually-hidden">Buscar en el foro</label>
+            <input type="text" id="foro-search-input" name="q" value="<?= htmlspecialchars($forumSearch, ENT_QUOTES, 'UTF-8') ?>" placeholder="Buscar en el foro..." data-forum-search-input>
             <input type="hidden" name="per_page" value="<?= $currentPerPage ?>">
             <?php if ($forumCategory !== '') : ?>
                 <input type="hidden" name="cat" value="<?= htmlspecialchars($forumCategory, ENT_QUOTES, 'UTF-8') ?>">

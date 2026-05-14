@@ -316,8 +316,9 @@ CREATE TABLE tecnicas_personaje (
 ) ENGINE=InnoDB;
 
 -- ==============================================
--- INSERT DE DATOS DE PRUEBA
+-- INSERT PARA PROBAR
 -- ==============================================
+
 INSERT INTO usuario (usuario_id, nombre_usuario, email, contrasena, avatar, ip_registro, rol) VALUES
 	(1, 'admin_ivan', 'admin@inamania.test', '$2y$10$cNYTZ.gvlflwipvwryt6Cu7ntre5Ul7ql4hd/Oi6md0DVq0l6Cjsi', NULL, '127.0.0.1', 'admin'),
 	(2, 'mod_lucia', 'mod@inamania.test', '$2y$10$cNYTZ.gvlflwipvwryt6Cu7ntre5Ul7ql4hd/Oi6md0DVq0l6Cjsi', NULL, '10.10.0.12', 'moderador'),

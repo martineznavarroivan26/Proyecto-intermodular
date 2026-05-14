@@ -144,7 +144,8 @@ $formatRarityStars = static function (string $rawRarity): string {
     <section class="wiki-browser" id="team-browser" data-wiki-browser>
         <div class="wiki-browser-toolbar">
             <form class="wiki-browser-search-bar" data-wiki-search-form>
-                <input type="search" class="wiki-browser-input" placeholder="Buscar el equipo" data-wiki-search-input>
+                <label for="search-equipo" class="visually-hidden">Buscar el equipo</label>
+                <input type="search" id="search-equipo" class="wiki-browser-input" placeholder="Buscar el equipo" data-wiki-search-input>
                 <button type="submit" class="wiki-browser-button"><i class="fa fa-search"></i> Buscar</button>
             </form>
         </div>
@@ -227,7 +228,8 @@ $formatRarityStars = static function (string $rawRarity): string {
     <section class="wiki-browser" id="character-browser" data-empty-label="No hay personajes que coincidan con la busqueda." data-wiki-browser>
         <div class="wiki-browser-toolbar">
             <form class="wiki-browser-search-bar" data-character-search-form data-wiki-search-form>
-                <input type="search" class="wiki-browser-input" placeholder="Buscar el personaje" data-character-search data-wiki-search-input>
+                <label for="search-personaje" class="visually-hidden">Buscar el personaje</label>
+                <input type="search" id="search-personaje" class="wiki-browser-input" placeholder="Buscar el personaje" data-character-search data-wiki-search-input>
                 <button type="submit" class="wiki-browser-button"><i class="fa fa-search"></i> Buscar</button>
             </form>
         </div>
@@ -360,7 +362,8 @@ $formatRarityStars = static function (string $rawRarity): string {
     <section class="wiki-browser" id="technique-browser" data-wiki-browser>
         <div class="wiki-browser-toolbar">
             <form class="wiki-browser-search-bar" data-wiki-search-form>
-                <input type="search" class="wiki-browser-input" placeholder="Buscar la supertecnica" data-wiki-search-input>
+                <label for="search-supertecnica" class="visually-hidden">Buscar la supertecnica</label>
+                <input type="search" id="search-supertecnica" class="wiki-browser-input" placeholder="Buscar la supertecnica" data-wiki-search-input>
                 <button type="submit" class="wiki-browser-button"><i class="fa fa-search"></i> Buscar</button>
             </form>
         </div>
@@ -425,7 +428,8 @@ $formatRarityStars = static function (string $rawRarity): string {
     <section class="wiki-browser" id="object-browser" data-wiki-browser>
         <div class="wiki-browser-toolbar">
             <form class="wiki-browser-search-bar" data-wiki-search-form>
-                <input type="search" class="wiki-browser-input" placeholder="Buscar el objeto" data-wiki-search-input>
+                <label for="search-objeto" class="visually-hidden">Buscar el objeto</label>
+                <input type="search" id="search-objeto" class="wiki-browser-input" placeholder="Buscar el objeto" data-wiki-search-input>
                 <button type="submit" class="wiki-browser-button"><i class="fa fa-search"></i> Buscar</button>
             </form>
         </div>
