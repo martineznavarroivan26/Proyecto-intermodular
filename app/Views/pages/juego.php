@@ -94,22 +94,22 @@ $formatRarityStars = static function (string $rawRarity): string {
 
     <!-- Navegacion de secciones -->
     <div class="wiki-navigation">
-        <h3 class="wiki-nav-title"><i class="fa fa-search"></i> Que datos quieres buscar</h3>
+        <h3 class="wiki-nav-title"><i class="fa fa-search" aria-hidden="true"></i> Que datos quieres buscar</h3>
         <div class="wiki-nav-buttons">
             <a href="#equipos" class="wiki-nav-btn">
-                <i class="fa fa-users"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
                 <span>Equipos</span>
             </a>
             <a href="#personajes" class="wiki-nav-btn">
-                <i class="fa fa-user"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
                 <span>Personajes</span>
             </a>
             <a href="#supertecnicas" class="wiki-nav-btn">
-                <i class="fa fa-bolt"></i>
+                <i class="fa fa-bolt" aria-hidden="true"></i>
                 <span>Supertecnicas</span>
             </a>
             <a href="#objetos" class="wiki-nav-btn">
-                <i class="fa fa-gift"></i>
+                <i class="fa fa-gift" aria-hidden="true"></i>
                 <span>Objetos</span>
             </a>
         </div>
@@ -139,14 +139,13 @@ $formatRarityStars = static function (string $rawRarity): string {
     <div class="linea" id="equipos"></div>
 
     <!-- Equipos -->
-    <div id="equipos"></div>
     <h1 class="titulo">Equipos</h1>
-    <section class="wiki-browser" id="team-browser" data-wiki-browser>
+    <section class="wiki-browser" id="team-browser" aria-label="Buscador de equipos" data-wiki-browser>
         <div class="wiki-browser-toolbar">
             <form class="wiki-browser-search-bar" data-wiki-search-form>
                 <label for="search-equipo" class="visually-hidden">Buscar el equipo</label>
                 <input type="search" id="search-equipo" class="wiki-browser-input" placeholder="Buscar el equipo" data-wiki-search-input>
-                <button type="submit" class="wiki-browser-button"><i class="fa fa-search"></i> Buscar</button>
+                <button type="submit" class="wiki-browser-button"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
             </form>
         </div>
 
@@ -225,12 +224,12 @@ $formatRarityStars = static function (string $rawRarity): string {
 
     <!-- Personajes -->
     <h1 class="titulo">Personajes</h1>
-    <section class="wiki-browser" id="character-browser" data-empty-label="No hay personajes que coincidan con la busqueda." data-wiki-browser>
+    <section class="wiki-browser" id="character-browser" aria-label="Buscador de personajes" data-empty-label="No hay personajes que coincidan con la busqueda." data-wiki-browser>
         <div class="wiki-browser-toolbar">
             <form class="wiki-browser-search-bar" data-character-search-form data-wiki-search-form>
                 <label for="search-personaje" class="visually-hidden">Buscar el personaje</label>
                 <input type="search" id="search-personaje" class="wiki-browser-input" placeholder="Buscar el personaje" data-character-search data-wiki-search-input>
-                <button type="submit" class="wiki-browser-button"><i class="fa fa-search"></i> Buscar</button>
+                <button type="submit" class="wiki-browser-button"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
             </form>
         </div>
 
@@ -331,7 +330,7 @@ $formatRarityStars = static function (string $rawRarity): string {
                                                         <th><?= $esc((string) ($statsRow[1]['label'] ?? '')) ?></th>
                                                         <td><?= $esc((string) ($statsRow[1]['value'] ?? '')) ?></td>
                                                     <?php else : ?>
-                                                        <th class="is-empty"></th>
+                                                        <td class="is-empty"></td>
                                                         <td class="is-empty"></td>
                                                     <?php endif; ?>
                                                 </tr>
@@ -359,12 +358,12 @@ $formatRarityStars = static function (string $rawRarity): string {
 
     <!-- Supertecnicas -->
     <h1 class="titulo">Supertecnicas</h1>
-    <section class="wiki-browser" id="technique-browser" data-wiki-browser>
+    <section class="wiki-browser" id="technique-browser" aria-label="Buscador de supertecnicas" data-wiki-browser>
         <div class="wiki-browser-toolbar">
             <form class="wiki-browser-search-bar" data-wiki-search-form>
                 <label for="search-supertecnica" class="visually-hidden">Buscar la supertecnica</label>
                 <input type="search" id="search-supertecnica" class="wiki-browser-input" placeholder="Buscar la supertecnica" data-wiki-search-input>
-                <button type="submit" class="wiki-browser-button"><i class="fa fa-search"></i> Buscar</button>
+                <button type="submit" class="wiki-browser-button"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
             </form>
         </div>
 
@@ -425,12 +424,12 @@ $formatRarityStars = static function (string $rawRarity): string {
 
     <!-- Objetos coleccionables -->
     <h1 class="titulo">Objetos Coleccionables</h1>
-    <section class="wiki-browser" id="object-browser" data-wiki-browser>
+    <section class="wiki-browser" id="object-browser" aria-label="Buscador de objetos coleccionables" data-wiki-browser>
         <div class="wiki-browser-toolbar">
             <form class="wiki-browser-search-bar" data-wiki-search-form>
                 <label for="search-objeto" class="visually-hidden">Buscar el objeto</label>
                 <input type="search" id="search-objeto" class="wiki-browser-input" placeholder="Buscar el objeto" data-wiki-search-input>
-                <button type="submit" class="wiki-browser-button"><i class="fa fa-search"></i> Buscar</button>
+                <button type="submit" class="wiki-browser-button"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
             </form>
         </div>
 
