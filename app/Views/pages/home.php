@@ -93,7 +93,7 @@ $homeNews = is_array($homeNews ?? null) ? $homeNews : [];
             </div>
         </article>
         <article class="flex home-game-card">
-            <img src="<?= asset('uploads/imagenes/juegos/Inazuma-Eleven-1-2-3-Box-Art.webp') ?>" class="caratula home-game-image" alt="Trilogía original">
+            <a href="<?= route('ie2') ?>" class="home-game-link"><img src="<?= asset('uploads/imagenes/juegos/Inazuma-Eleven-1-2-3-Box-Art.webp') ?>" class="caratula home-game-image" alt="Trilogía original"></a>
             <div class="home-news-content">
                 <h3 class="home-news-title">Trilogía Original</h3>
                 <p class="noticia home-news-text">La trilogía original reúne los tres primeros juegos y resume el ascenso de Raimon desde equipo débil hasta leyenda.</p>
